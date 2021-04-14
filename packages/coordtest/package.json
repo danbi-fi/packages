@@ -1,6 +1,6 @@
 {
   "name": "coord-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "From juso to geolocation translator testing",
   "private": true,
   "author": "Eunchurn Park <ec.park@danbicorp.com",
@@ -15,7 +15,7 @@
     "watch": "tsc --watch"
   },
   "dependencies": {
-    "@danbi-fi/juso2geolocation": "^0.0.1",
+    "@danbi-fi/juso2geolocation": "^0.0.2",
     "axios": "^0.21.1",
     "lodash": "^4.17.21"
   },
