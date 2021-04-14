@@ -8,6 +8,8 @@
   - [`@danbi-fi/juso2geolocation`](#danbi-fijuso2geolocation)
 ## `@danbi-fi/juso2geolocation`
 
+![npm (tag)](https://img.shields.io/npm/v/@danbi-fi/juso2geolocation/latest) ![npm type definitions](https://img.shields.io/npm/types/@danbi-fi/juso2geolocation) ![npm](https://img.shields.io/npm/dw/@danbi-fi/juso2geolocation)
+
 - Install
 
 ```sh
