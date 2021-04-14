@@ -1,0 +1,46 @@
+name: Unit Test
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+      - name: Configure NPM
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=$GH_PACKAGE_TOKEN" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_PACKAGE_TOKEN" >> .npmrc
+        env:
+          GH_PACKAGE_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
+          NPM_PACKAGE_TOKEN: ${{ secrets.NPM_PACKAGE_TOKEN }}
+      - name: Install dependencies
+        run: |
+          yarn
+      - name: Lerna Bootstrap
+        run: |
+          yarn bootstrap
+      - name: Unit Test
+        run: |
+          yarn test
+      - name: Collecting Code Coverage
+        uses: codecov/codecov-action@v1

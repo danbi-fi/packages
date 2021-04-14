@@ -1,0 +1,26 @@
+{
+  "name": "coord-test",
+  "version": "0.0.1",
+  "description": "From juso to geolocation translator testing",
+  "private": true,
+  "author": "Eunchurn Park <ec.park@danbicorp.com",
+  "homepage": "https://github.com/danbi-fi/packages/tree/main/packages/ringtest#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danbi-fi/packages.git"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@danbi-fi/juso2geolocation": "^0.0.1",
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.37"
+  }
+}

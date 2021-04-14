@@ -1,0 +1,42 @@
+{
+  "name": "@danbi-fi/juso2geolocation",
+  "version": "0.0.1",
+  "description": "Juso API to Geolocation",
+  "keywords": [
+    "juso",
+    "geolocation",
+    "epsg",
+    "typescript"
+  ],
+  "author": "Eunchurn Park <ec.park@danbicorp.com>",
+  "homepage": "https://github.com/danbi-fi/packages/tree/main/packages/service#readme",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/types.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbi-fi/packages.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/danbi-fi/packages/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.37"
+  }
+}
