@@ -28,7 +28,7 @@ export type Result = {
  * @constructor
  * @this {TransGeolocation}
  * @param {string} apiKey Juso Coord. API key
- * @method `translate()` remove last queue element
+ * @method `translate()` translation geolocation
  * @version 0.0.1
  */
 
