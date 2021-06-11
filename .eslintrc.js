@@ -1,10 +1,6 @@
 export default {
   parser: "@typescript-eslint/parser", // Specifies ESLint parser
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "prettier/@typescript-eslint",
-  ],
+  extends: ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "prettier/@typescript-eslint"],
   plugins: ["@typescript-eslint", "prettier"],
   parserOptions: {
     ecmaVersion: 2019, // Allows parsing of modern ECMA features
