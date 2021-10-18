@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/lodash": "4.14.170",
-    "@types/node": "14.17.0"
+    "@types/node": "14.17.27"
   },
   "gitHead": "9fe61e11775c23add940e615c0da599546a5b8a8"
 }
