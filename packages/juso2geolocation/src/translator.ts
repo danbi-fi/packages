@@ -31,7 +31,7 @@ export type Result = {
  * @version 0.0.1
  */
 
-export const TransGeolocation = (function (this: TransGeolocation, apiKey: string) {
+export const TransGeolocation = function (this: TransGeolocation, apiKey: string) {
   if (!(this instanceof TransGeolocation)) {
     return new TransGeolocation(apiKey);
   }
@@ -102,8 +102,8 @@ export const TransGeolocation = (function (this: TransGeolocation, apiKey: strin
         y: parseFloat(entY),
       };
     } catch (e) {
-      console.log(e);
+      // console.log(e);
       return null;
     }
   };
-} as any) as { new (apiKey: string): TransGeolocation };
+} as any as { new (apiKey: string): TransGeolocation };

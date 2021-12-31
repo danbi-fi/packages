@@ -1,0 +1,43 @@
+{
+  "name": "danbi-net",
+  "version": "0.0.1",
+  "description": "Danbi Korea network tool",
+  "keywords": [
+    "ip",
+    "network",
+    "internet",
+    "danbi"
+  ],
+  "homepage": "https://github.com/danbi-fi/packages/tree/main/packages/danbi-net#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "src/__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbi-fi/packages.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/danbi-fi/packages/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.178",
+    "jest-mock-extended": "^2.0.4"
+  }
+}

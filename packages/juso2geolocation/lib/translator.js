@@ -47,32 +47,30 @@ var lodash_1 = require("lodash");
  * @constructor
  * @this {TransGeolocation}
  * @param {string} apiKey Juso Coord. API key
- * @method `translate()` remove last queue element
+ * @method `translate()` translation geolocation
  * @version 0.0.1
  */
 exports.TransGeolocation = function (apiKey) {
     if (!(this instanceof exports.TransGeolocation)) {
         return new exports.TransGeolocation(apiKey);
     }
-    var success;
     Object.defineProperty(this, "success", {
         get: function () {
-            return success;
+            return this.value || false;
         },
         set: function (val) {
-            this.success = val;
-        }
+            this.value = val;
+        },
     });
     this.translate = function (params) {
         return __awaiter(this, void 0, void 0, function () {
-            var admCd, rnMgtSn, udrtYn, buldMnnm, buldSlno, data, jsonRes, results, juso, _a, entX, entY, transData, x, y, z;
+            var admCd, rnMgtSn, udrtYn, buldMnnm, buldSlno, data, jsonRes, results, juso, _a, entX, entY, transData, x, y, z, e_1;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
+                        _b.trys.push([0, 3, , 4]);
                         admCd = params.admCd, rnMgtSn = params.rnMgtSn, udrtYn = params.udrtYn, buldMnnm = params.buldMnnm, buldSlno = params.buldSlno;
-                        return [4 /*yield*/, axios_1.default({
-                                method: "post",
-                                url: "https://www.juso.go.kr/addrlink/addrCoordApiJsonp.do",
+                        return [4 /*yield*/, axios_1.default.post("https://www.juso.go.kr/addrlink/addrCoordApiJsonp.do", null, {
                                 params: {
                                     confmKey: apiKey,
                                     admCd: admCd,
@@ -101,9 +99,7 @@ exports.TransGeolocation = function (apiKey) {
                             return [2 /*return*/, null];
                         }
                         _a = juso[0], entX = _a.entX, entY = _a.entY;
-                        return [4 /*yield*/, axios_1.default({
-                                method: "get",
-                                url: "https://epsg.io/trans",
+                        return [4 /*yield*/, axios_1.default.get("https://epsg.io/trans", {
                                 params: {
                                     s_srs: 5179,
                                     t_srs: 4326,
@@ -118,6 +114,11 @@ exports.TransGeolocation = function (apiKey) {
                             return [2 /*return*/, null];
                         }
                         x = transData.x, y = transData.y, z = transData.z;
+                        if (lodash_1.isNull(x) || lodash_1.isUndefined(x) || lodash_1.isNull(y) || lodash_1.isUndefined(y) || lodash_1.isNull(z) || lodash_1.isUndefined(z)) {
+                            this.success = false;
+                            return [2 /*return*/, null];
+                        }
+                        this.success = true;
                         return [2 /*return*/, {
                                 latitude: parseFloat(y),
                                 longitude: parseFloat(x),
@@ -125,6 +126,11 @@ exports.TransGeolocation = function (apiKey) {
                                 x: parseFloat(entX),
                                 y: parseFloat(entY),
                             }];
+                    case 3:
+                        e_1 = _b.sent();
+                        // console.log(e);
+                        return [2 /*return*/, null];
+                    case 4: return [2 /*return*/];
                 }
             });
         });

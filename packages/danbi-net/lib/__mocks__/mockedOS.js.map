@@ -1,0 +1,1 @@
+{"version":3,"file":"mockedOS.js","sourceRoot":"","sources":["../../src/__mocks__/mockedOS.ts"],"names":[],"mappings":";;AAAA,yDAA4D;AAC5D,kBAAe,IAAI,CAAC,IAAI,CAAC,IAAI,EAAE,cAAM,OAAA,CAAC;IACpC,iBAAiB,EAAE,IAAI,CAAC,EAAE,CAAC,cAAM,OAAA,yCAAqB,EAArB,CAAqB,CAAC;CACxD,CAAC,EAFmC,CAEnC,CAAC,CAAC"}
