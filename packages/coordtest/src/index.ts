@@ -10,7 +10,7 @@ const params: Params = {
   udrtYn: "0",
   buldSlno: "0",
   buldMnnm: "99",
-}
+};
 
 async function main() {
   const data = await testTranslator.translate(params);

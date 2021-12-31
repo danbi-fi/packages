@@ -106,4 +106,4 @@ export const TransGeolocation = function (this: TransGeolocation, apiKey: string
       return null;
     }
   };
-} as any as { new (apiKey: string): TransGeolocation };
+} as unknown as { new (apiKey: string): TransGeolocation };

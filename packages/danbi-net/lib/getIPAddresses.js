@@ -9,9 +9,9 @@ function getIPAddresses() {
     for (var devName in ifaces) {
         var iface = ifaces[devName];
         if (iface === undefined)
-            return ["0.0.0.0"];
+            return ['0.0.0.0'];
         var ipaddress = lodash_1.compact(iface.map(function (alias) {
-            if (alias.family === "IPv4" && alias.address !== "127.0.0.1" && !alias.internal) {
+            if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
                 return alias.address;
             }
             return null;
@@ -21,7 +21,7 @@ function getIPAddresses() {
         ip.push(ipaddress[0]);
     }
     if (lodash_1.isEmpty(ip))
-        return ["0.0.0.0"];
+        return ['0.0.0.0'];
     return ip;
 }
 exports.getIPAddresses = getIPAddresses;

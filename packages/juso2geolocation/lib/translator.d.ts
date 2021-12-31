@@ -1,20 +1,20 @@
 export declare type Params = {
-    admCd: string;
-    rnMgtSn: string;
-    udrtYn: string;
-    buldMnnm: string;
-    buldSlno: string;
+  admCd: string;
+  rnMgtSn: string;
+  udrtYn: string;
+  buldMnnm: string;
+  buldSlno: string;
 };
 export declare type TransGeolocation = {
-    translate(params: Params): Promise<Result | null>;
-    success: boolean;
+  translate(params: Params): Promise<Result | null>;
+  success: boolean;
 };
 export declare type Result = {
-    latitude: number;
-    longitude: number;
-    altitude: number;
-    x: number;
-    y: number;
+  latitude: number;
+  longitude: number;
+  altitude: number;
+  x: number;
+  y: number;
 };
 /**
  * Juso API to Geolocation data

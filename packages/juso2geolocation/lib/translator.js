@@ -54,7 +54,7 @@ exports.TransGeolocation = function (apiKey) {
     if (!(this instanceof exports.TransGeolocation)) {
         return new exports.TransGeolocation(apiKey);
     }
-    Object.defineProperty(this, "success", {
+    Object.defineProperty(this, 'success', {
         get: function () {
             return this.value || false;
         },
@@ -70,7 +70,7 @@ exports.TransGeolocation = function (apiKey) {
                     case 0:
                         _b.trys.push([0, 3, , 4]);
                         admCd = params.admCd, rnMgtSn = params.rnMgtSn, udrtYn = params.udrtYn, buldMnnm = params.buldMnnm, buldSlno = params.buldSlno;
-                        return [4 /*yield*/, axios_1.default.post("https://www.juso.go.kr/addrlink/addrCoordApiJsonp.do", null, {
+                        return [4 /*yield*/, axios_1.default.post('https://www.juso.go.kr/addrlink/addrCoordApiJsonp.do', null, {
                                 params: {
                                     confmKey: apiKey,
                                     admCd: admCd,
@@ -78,7 +78,7 @@ exports.TransGeolocation = function (apiKey) {
                                     udrtYn: udrtYn,
                                     buldMnnm: buldMnnm,
                                     buldSlno: buldSlno,
-                                    resultType: "json",
+                                    resultType: 'json',
                                 },
                             })];
                     case 1:
@@ -99,7 +99,7 @@ exports.TransGeolocation = function (apiKey) {
                             return [2 /*return*/, null];
                         }
                         _a = juso[0], entX = _a.entX, entY = _a.entY;
-                        return [4 /*yield*/, axios_1.default.get("https://epsg.io/trans", {
+                        return [4 /*yield*/, axios_1.default.get('https://epsg.io/trans', {
                                 params: {
                                     s_srs: 5179,
                                     t_srs: 4326,

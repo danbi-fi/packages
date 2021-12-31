@@ -5,7 +5,6 @@ mockOS.networkInterfaces = jest.fn().mockReturnValue(mockNetworkInterfaces);
 jest.mock("os", () => mockOS);
 
 import { getIPAddresses } from "..";
-import { networkInterfaces } from "os";
 
 describe("danbi-net", () => {
   it("getIPAddresses", () => {

@@ -1,20 +1,13 @@
 {
   "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.referencesCodeLens.enabled": true,
-  "editor.tokenColorCustomizations": {
-    "[Material Theme]": {
-      "semanticHighlighting": true
-    }
-  },
+  "editor.semanticTokenColorCustomizations": { "enabled": true },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
   },
   "editor.formatOnSave": true,
   "cSpell.enabled": false,

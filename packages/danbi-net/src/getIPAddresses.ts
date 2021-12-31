@@ -4,7 +4,7 @@ import { compact, isEmpty } from "lodash";
 const ifaces = networkInterfaces();
 export function getIPAddresses() {
   const ip: string[] = [];
-  for (var devName in ifaces) {
+  for (const devName in ifaces) {
     const iface = ifaces[devName];
     if (iface === undefined) return ["0.0.0.0"];
     const ipaddress = compact(
