@@ -62,7 +62,7 @@ export const mockNetworkInterfaces: NodeJS.Dict<os.NetworkInterfaceInfo[]> = {
       scopeid: 12,
     },
     {
-      address: "192.168.0.50",
+      address: "192.168.10.50",
       netmask: "255.255.255.0",
       family: "IPv4",
       mac: "a0:78:17:a6:30:9d",

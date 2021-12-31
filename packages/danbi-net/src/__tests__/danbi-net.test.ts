@@ -1,11 +1,14 @@
-import { getIPAddresses } from "..";
-import * as os from "os";
 import { mockNetworkInterfaces } from "./mockNetworkInterfaces";
+
+const mockOS = jest.requireActual("os");
+mockOS.networkInterfaces = jest.fn().mockReturnValue(mockNetworkInterfaces);
+jest.mock("os", () => mockOS);
+
+import { getIPAddresses } from "..";
+import { networkInterfaces } from "os";
 
 describe("danbi-net", () => {
   it("getIPAddresses", () => {
-    const spy = jest.spyOn(os, "networkInterfaces");
-    spy.mockReturnValue(mockNetworkInterfaces);
-    expect(getIPAddresses()).toEqual(["192.168.0.50"]);
+    expect(getIPAddresses()).toEqual(["192.168.10.50"]);
   });
 });

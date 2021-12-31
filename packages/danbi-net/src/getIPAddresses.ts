@@ -1,12 +1,11 @@
-import * as os from "os";
+import { networkInterfaces } from "os";
 import { compact, isEmpty } from "lodash";
 
-const networkInterfaces = os.networkInterfaces();
-
+const ifaces = networkInterfaces();
 export function getIPAddresses() {
   const ip: string[] = [];
-  for (var devName in networkInterfaces) {
-    const iface = networkInterfaces[devName];
+  for (var devName in ifaces) {
+    const iface = ifaces[devName];
     if (iface === undefined) return ["0.0.0.0"];
     const ipaddress = compact(
       iface.map((alias) => {
