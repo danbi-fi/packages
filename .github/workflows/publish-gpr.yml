@@ -34,6 +34,8 @@ jobs:
         run: yarn install
       - name: Bootstrap
         run: yarn bootstrap
+      - name: Build
+        run: yarn tsc
       - name: Set Current Version
         run: |
           CURRENT_VERSION=$(node -p 'require("./lerna.json").version')
