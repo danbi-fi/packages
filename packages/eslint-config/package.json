@@ -35,7 +35,8 @@
   "dependencies": {
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-plugin-prettier": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.1"
   },
   "gitHead": "387ffc4d39b44d3d95763a4d3fe01261d8ff37bd"
 }
