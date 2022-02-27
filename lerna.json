@@ -17,6 +17,7 @@
       "message": "chore(release): publish"
     },
     "publish": {
+      "registry": "https://npm.pkg.github.com",
       "conventionalCommits": true,
       "message": "chore(release): publish",
       "allowBranch": "main"
