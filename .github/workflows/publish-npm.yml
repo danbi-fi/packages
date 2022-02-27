@@ -32,6 +32,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install
         run: yarn install
+      - name: Bootstrap
+        run: yarn bootstrap
       # Define ${CURRENT_VERSION}
       - name: Set Current Version
         run: |
@@ -78,6 +80,8 @@ jobs:
           echo "@danbi-fi:registry=https://registry.npmjs.org" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=$NPM_PACKAGE_TOKEN" >> .npmrc
           cp lerna.npm.json lerna.json
+          git add .
+          git commit -m "chore(publish): registry change"
       - name: Publish
         if: steps.tag_check.outputs.exists_tag == 'false'
         run: |
