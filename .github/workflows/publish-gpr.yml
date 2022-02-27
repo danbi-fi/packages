@@ -75,6 +75,8 @@ jobs:
           draft: false
           prerelease: false
       - name: Configure NPM
+        env:
+          GH_PACKAGE_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
         run: |
           echo "@danbi-fi:registry=https://npm.pkg.github.com" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=$GH_PACKAGE_TOKEN" >> .npmrc
