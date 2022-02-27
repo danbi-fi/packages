@@ -1,5 +1,15 @@
 # `@danbi-fi/danbi-net`
 
+![npm (tag)](https://img.shields.io/npm/v/@danbi-fi/danbi-net/latest) ![npm type definitions](https://img.shields.io/npm/types/@danbi-fi/danbi-net) ![npm](https://img.shields.io/npm/dw/@danbi-fi/danbi-net)
+
+단비 서버를 위한 네트워크 툴
+
+## Installation
+
+```sh
+yarn add @danbi-fi/danbi-net
+```
+
 ## Usage
 
 ### `function getIPAddresses()`
