@@ -1,6 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = {
+module.exports = {
     rules: {
         "prettier/prettier": ["error"],
         "no-console": ["off"],

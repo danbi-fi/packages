@@ -1,6 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = {
+module.exports = {
     parser: "@typescript-eslint/parser",
     plugins: ["@typescript-eslint"],
     extends: [
