@@ -29,7 +29,7 @@
     "lerna:publish": "npm run lerna:publish:npm && npm run lerna:publish:github",
     "lerna:publish:all": "lerna publish",
     "lerna:package:update": "lerna exec -- 'npx npm-check-updates -u'",
-    "local-publish": "lerna publish from-package --registry=\"http://localhost:4873/\" --no-git-tag-version --no-push --no-verify-access"
+    "local-publish": "lerna publish from-package --registry http://localhost:4873 --no-git-tag-version --no-push --no-verify-access"
   },
   "repository": {
     "type": "git",
