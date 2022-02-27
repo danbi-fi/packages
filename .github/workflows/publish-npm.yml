@@ -76,6 +76,8 @@ jobs:
           draft: false
           prerelease: false
       - name: Configure NPM
+        env:
+          NPM_PACKAGE_TOKEN: ${{ secrets.NPM_PACKAGE_TOKEN }}
         run: |
           echo "@danbi-fi:registry=https://registry.npmjs.org" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=$NPM_PACKAGE_TOKEN" >> .npmrc
