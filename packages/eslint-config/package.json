@@ -32,5 +32,10 @@
   "devDependencies": {
     "@types/node": "17.0.5"
   },
-  "gitHead": "a2291ece9ace04a35042d08f52c6fb43067865a6"
+  "dependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "gitHead": "387ffc4d39b44d3d95763a4d3fe01261d8ff37bd"
 }
