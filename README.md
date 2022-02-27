@@ -1,4 +1,4 @@
-[![Unit Test](https://github.com/danbi-fi/packages/actions/workflows/unit-test.yml/badge.svg)](https://github.com/danbi-fi/packages/actions/workflows/unit-test.yml)
+[![Unit Test](https://github.com/danbi-fi/packages/actions/workflows/unit-test.yml/badge.svg)](https://github.com/danbi-fi/packages/actions/workflows/unit-test.yml) [![Publish GPR](https://github.com/danbi-fi/packages/actions/workflows/publish-gpr.yml/badge.svg)](https://github.com/danbi-fi/packages/actions/workflows/publish-gpr.yml) [![Publish NPM](https://github.com/danbi-fi/packages/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/danbi-fi/packages/actions/workflows/publish-npm.yml) [![Create Pull Request](https://github.com/danbi-fi/packages/actions/workflows/create-release-pr.yml/badge.svg)](https://github.com/danbi-fi/packages/actions/workflows/create-release-pr.yml) [![/canary-release](https://github.com/danbi-fi/packages/actions/workflows/canary-release.yml/badge.svg)](https://github.com/danbi-fi/packages/actions/workflows/canary-release.yml)
 
 # Danbi-Fi General purpose Javascript Packages
 
