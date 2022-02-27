@@ -54,7 +54,7 @@ exports.TransGeolocation = function (apiKey) {
     if (!(this instanceof exports.TransGeolocation)) {
         return new exports.TransGeolocation(apiKey);
     }
-    Object.defineProperty(this, 'success', {
+    Object.defineProperty(this, "success", {
         get: function () {
             return this.value || false;
         },
@@ -70,7 +70,7 @@ exports.TransGeolocation = function (apiKey) {
                     case 0:
                         _b.trys.push([0, 3, , 4]);
                         admCd = params.admCd, rnMgtSn = params.rnMgtSn, udrtYn = params.udrtYn, buldMnnm = params.buldMnnm, buldSlno = params.buldSlno;
-                        return [4 /*yield*/, axios_1.default.post('https://www.juso.go.kr/addrlink/addrCoordApiJsonp.do', null, {
+                        return [4 /*yield*/, axios_1.default.post("https://www.juso.go.kr/addrlink/addrCoordApiJsonp.do", null, {
                                 params: {
                                     confmKey: apiKey,
                                     admCd: admCd,
@@ -78,28 +78,28 @@ exports.TransGeolocation = function (apiKey) {
                                     udrtYn: udrtYn,
                                     buldMnnm: buldMnnm,
                                     buldSlno: buldSlno,
-                                    resultType: 'json',
+                                    resultType: "json",
                                 },
                             })];
                     case 1:
                         data = (_b.sent()).data;
                         jsonRes = eval(data);
-                        if (lodash_1.isEmpty(jsonRes) || lodash_1.isNull(jsonRes) || lodash_1.isUndefined(jsonRes)) {
+                        if ((0, lodash_1.isEmpty)(jsonRes) || (0, lodash_1.isNull)(jsonRes) || (0, lodash_1.isUndefined)(jsonRes)) {
                             this.success = false;
                             return [2 /*return*/, null];
                         }
                         results = jsonRes.results;
-                        if (lodash_1.isEmpty(results) || lodash_1.isNull(results) || lodash_1.isUndefined(results)) {
+                        if ((0, lodash_1.isEmpty)(results) || (0, lodash_1.isNull)(results) || (0, lodash_1.isUndefined)(results)) {
                             this.success = false;
                             return [2 /*return*/, null];
                         }
                         juso = results.juso;
-                        if (lodash_1.isEmpty(juso) || lodash_1.isNull(juso) || lodash_1.isUndefined(juso)) {
+                        if ((0, lodash_1.isEmpty)(juso) || (0, lodash_1.isNull)(juso) || (0, lodash_1.isUndefined)(juso)) {
                             this.success = false;
                             return [2 /*return*/, null];
                         }
                         _a = juso[0], entX = _a.entX, entY = _a.entY;
-                        return [4 /*yield*/, axios_1.default.get('https://epsg.io/trans', {
+                        return [4 /*yield*/, axios_1.default.get("https://epsg.io/trans", {
                                 params: {
                                     s_srs: 5179,
                                     t_srs: 4326,
@@ -109,12 +109,12 @@ exports.TransGeolocation = function (apiKey) {
                             })];
                     case 2:
                         transData = (_b.sent()).data;
-                        if (lodash_1.isEmpty(transData) || lodash_1.isNull(transData) || lodash_1.isUndefined(transData)) {
+                        if ((0, lodash_1.isEmpty)(transData) || (0, lodash_1.isNull)(transData) || (0, lodash_1.isUndefined)(transData)) {
                             this.success = false;
                             return [2 /*return*/, null];
                         }
                         x = transData.x, y = transData.y, z = transData.z;
-                        if (lodash_1.isNull(x) || lodash_1.isUndefined(x) || lodash_1.isNull(y) || lodash_1.isUndefined(y) || lodash_1.isNull(z) || lodash_1.isUndefined(z)) {
+                        if ((0, lodash_1.isNull)(x) || (0, lodash_1.isUndefined)(x) || (0, lodash_1.isNull)(y) || (0, lodash_1.isUndefined)(y) || (0, lodash_1.isNull)(z) || (0, lodash_1.isUndefined)(z)) {
                             this.success = false;
                             return [2 /*return*/, null];
                         }

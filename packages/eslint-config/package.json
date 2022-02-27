@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-danbi-base",
+  "name": "@danbi-fi/eslint-config-danbi-base",
   "version": "0.0.3",
   "description": "Danbi-Fi developers ESLint configuration",
   "keywords": [
