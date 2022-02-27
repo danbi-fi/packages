@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.5...@danbi-fi/eslint-config-danbi-base@0.2.7) (2022-02-27)
+
+
+### Bug Fixes
+
+* **eslint:** export to module.exports ([31ffc31](https://github.com/danbi-fi/packages/commit/31ffc31c11fe08882f6fa439279e98754830195a))
+
+
+
+
+
+## [0.2.6](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.5...@danbi-fi/eslint-config-danbi-base@0.2.6) (2022-02-27)
+
+
+### Bug Fixes
+
+* **eslint:** export to module.exports ([31ffc31](https://github.com/danbi-fi/packages/commit/31ffc31c11fe08882f6fa439279e98754830195a))
+
+
+
+
+
 ## [0.2.5](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.4...@danbi-fi/eslint-config-danbi-base@0.2.5) (2022-02-27)
 
 **Note:** Version bump only for package @danbi-fi/eslint-config-danbi-base
