@@ -6,7 +6,7 @@
 
 - [Danbi-Fi General purpose Javascript Packages](#danbi-fi-general-purpose-javascript-packages)
   - [`@danbi-fi/juso2geolocation`](#danbi-fijuso2geolocation)
-  - [`@danbi-fi/eslint-config-danbi-base``](#danbi-fieslint-config-danbi-base)
+  - [`@danbi-fi/eslint-config-danbi-base`](#danbi-fieslint-config-danbi-base)
     - [Configuration](#configuration)
   - [`@danbi-fi/danbi-net`](#danbi-fidanbi-net)
     - [Usage](#usage)
@@ -54,7 +54,7 @@ async function main() {
 main();
 ```
 
-## `@danbi-fi/eslint-config-danbi-base``
+## `@danbi-fi/eslint-config-danbi-base`
 
 ### Configuration
 
