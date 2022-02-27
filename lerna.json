@@ -7,7 +7,7 @@
     "--no-lockfile"
   ],
   "useWorkspaces": true,
-  "version": "independent",
+  "version": "0.0.2",
   "command": {
     "version": {
       "ignoreChanges": [
