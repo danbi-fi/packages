@@ -39,5 +39,6 @@
   "devDependencies": {
     "@types/lodash": "4.14.179",
     "jest-mock-extended": "2.0.4"
-  }
+  },
+  "gitHead": "7c7d9851e68f94b77d3ca645f9d0c06afb6b8c54"
 }
