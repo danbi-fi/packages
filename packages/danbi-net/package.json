@@ -40,5 +40,5 @@
     "@types/lodash": "4.14.179",
     "jest-mock-extended": "2.0.4"
   },
-  "gitHead": "2fa8599cdf25ec08f2f88721dd08cca54063c338"
+  "gitHead": "bdc5b49976aeba898215ea3fe90c6fdd835e4d05"
 }
