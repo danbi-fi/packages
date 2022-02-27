@@ -7,14 +7,18 @@
 - [Danbi-Fi General purpose Javascript Packages](#danbi-fi-general-purpose-javascript-packages)
   - [`@danbi-fi/juso2geolocation`](#danbi-fijuso2geolocation)
   - [`@danbi-fi/eslint-config-danbi-base`](#danbi-fieslint-config-danbi-base)
+    - [Installation](#installation)
     - [Configuration](#configuration)
   - [`@danbi-fi/danbi-net`](#danbi-fidanbi-net)
+    - [Installation](#installation-1)
     - [Usage](#usage)
       - [`function getIPAddresses()`](#function-getipaddresses)
       - [`function getNetworkIP(callback: (error: Error | undefined, data: string) => void)`](#function-getnetworkipcallback-error-error--undefined-data-string--void)
 ## `@danbi-fi/juso2geolocation`
 
 ![npm (tag)](https://img.shields.io/npm/v/@danbi-fi/juso2geolocation/latest) ![npm type definitions](https://img.shields.io/npm/types/@danbi-fi/juso2geolocation) ![npm](https://img.shields.io/npm/dw/@danbi-fi/juso2geolocation)
+
+도로명 주소 API로부터 Geolocation 좌표를 획득:  EPSG:5179 (GPRS80) => EPSG:4326(WGS84) 변환
 
 - Install
 
@@ -56,9 +60,15 @@ main();
 
 ## `@danbi-fi/eslint-config-danbi-base`
 
+![npm (tag)](https://img.shields.io/npm/v/@danbi-fi/eslint-config-danbi-base/latest) ![npm type definitions](https://img.shields.io/npm/types/@danbi-fi/eslint-config-danbi-base) ![npm](https://img.shields.io/npm/dw/@danbi-fi/eslint-config-danbi-base)
+
+단비 개발자들의 `ESLint` 설정 프러그인
+
+### Installation
+
+`yarn add -D eslint prettier @danbi-fi/eslint-config-danbi-base`
 ### Configuration
 
-- 설치 `yarn add -D @danbi-fi/eslint-config-danbi-base`
 - `.eslintrc.js` 파일을 만들어 아래와 같이 씁니다.
 
 ```js
@@ -79,6 +89,16 @@ module.exports = {
 ```
 
 ## `@danbi-fi/danbi-net`
+
+![npm (tag)](https://img.shields.io/npm/v/@danbi-fi/danbi-net/latest) ![npm type definitions](https://img.shields.io/npm/types/@danbi-fi/danbi-net) ![npm](https://img.shields.io/npm/dw/@danbi-fi/danbi-net)
+
+단비 서버를 위한 네트워크 툴
+
+### Installation
+
+```sh
+yarn add @danbi-fi/danbi-net
+```
 
 ### Usage
 

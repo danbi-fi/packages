@@ -1,8 +1,14 @@
 # Danbi Developer ESLint Configuration
 
+![npm (tag)](https://img.shields.io/npm/v/@danbi-fi/eslint-config-danbi-base/latest) ![npm type definitions](https://img.shields.io/npm/types/@danbi-fi/eslint-config-danbi-base) ![npm](https://img.shields.io/npm/dw/@danbi-fi/eslint-config-danbi-base)
+
+단비 개발자들의 `ESLint` 설정 프러그인
+
+## Installation
+
+`yarn add -D eslint prettier @danbi-fi/eslint-config-danbi-base`
 ## Configuration
 
-- 설치 `yarn add -D @danbi-fi/eslint-config-danbi-base`
 - `.eslintrc.js` 파일을 만들어 아래와 같이 씁니다.
 
 ```js
