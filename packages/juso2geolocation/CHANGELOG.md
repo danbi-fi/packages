@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.8](https://github.com/danbi-fi/packages/compare/@danbi-fi/juso2geolocation@0.2.7...@danbi-fi/juso2geolocation@0.2.8) (2022-02-27)
+
+**Note:** Version bump only for package @danbi-fi/juso2geolocation
+
+
+
+
+
 ## [0.2.7](https://github.com/danbi-fi/packages/compare/@danbi-fi/juso2geolocation@0.2.6...@danbi-fi/juso2geolocation@0.2.7) (2022-02-27)
 
 **Note:** Version bump only for package @danbi-fi/juso2geolocation

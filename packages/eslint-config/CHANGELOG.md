@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.9](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.8...@danbi-fi/eslint-config-danbi-base@0.2.9) (2022-02-27)
+
+
+### Bug Fixes
+
+* **eslint:** @typescript-eslint/eslint-plugin ([e583946](https://github.com/danbi-fi/packages/commit/e583946f87623c945a4beeba2f5d1be21ebd5e3f))
+
+
+
+
+
 ## [0.2.8](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.7...@danbi-fi/eslint-config-danbi-base@0.2.8) (2022-02-27)
 
 **Note:** Version bump only for package @danbi-fi/eslint-config-danbi-base
