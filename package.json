@@ -27,6 +27,7 @@
     "lerna:publish:npm": "lerna publish --registry https://registry.npmjs.org --force-publish",
     "lerna:release": "lerna publish from-package",
     "lerna:publish": "npm run lerna:publish:npm && npm run lerna:publish:github",
+    "lerna:publish:all": "lerna publish",
     "lerna:package:update": "lerna exec -- 'npx npm-check-updates -u'"
   },
   "repository": {
