@@ -23,7 +23,7 @@
     "versionup": "lerna version --conventional-commits --no-git-tag-version",
     "lerna:create": "lerna create",
     "lerna:add": "lerna add --no-bootstrap",
-    "lerna:publish:github": "lerna publish from-package --registry https://npm.pkg.github.com --no-git-tag-version",
+    "lerna:publish:github": "lerna publish from-package --registry https://npm.pkg.github.com --no-git-tag-version --no-push --no-verify-access",
     "lerna:publish:npm": "lerna publish --registry https://registry.npmjs.org --force-publish",
     "lerna:release": "lerna publish from-package",
     "lerna:publish": "npm run lerna:publish:npm && npm run lerna:publish:github",
