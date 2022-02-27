@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.12](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.11...@danbi-fi/eslint-config-danbi-base@0.2.12) (2022-02-27)
+
+
+### Bug Fixes
+
+* **rules:** remove ([0232d09](https://github.com/danbi-fi/packages/commit/0232d09da0b5a4daf3291e27f7f764264fed426c))
+
+
+
+
+
 ## [0.2.11](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.10...@danbi-fi/eslint-config-danbi-base@0.2.11) (2022-02-27)
 
 

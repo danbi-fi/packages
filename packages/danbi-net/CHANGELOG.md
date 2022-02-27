@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.6](https://github.com/danbi-fi/packages/compare/@danbi-fi/danbi-net@0.3.5...@danbi-fi/danbi-net@0.3.6) (2022-02-27)
+
+**Note:** Version bump only for package @danbi-fi/danbi-net
+
+
+
+
+
 ## [0.3.5](https://github.com/danbi-fi/packages/compare/@danbi-fi/danbi-net@0.3.4...@danbi-fi/danbi-net@0.3.5) (2022-02-27)
 
 **Note:** Version bump only for package @danbi-fi/danbi-net
