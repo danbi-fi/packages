@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.1...@danbi-fi/eslint-config-danbi-base@0.2.2) (2022-02-27)
+
+**Note:** Version bump only for package @danbi-fi/eslint-config-danbi-base
+
+
+
+
+
 ## [0.2.1](https://github.com/danbi-fi/packages/compare/@danbi-fi/eslint-config-danbi-base@0.2.0...@danbi-fi/eslint-config-danbi-base@0.2.1) (2022-02-27)
 
 **Note:** Version bump only for package @danbi-fi/eslint-config-danbi-base
