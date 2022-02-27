@@ -11,6 +11,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.3.7](https://github.com/danbi-fi/packages/compare/@danbi-fi/danbi-net@0.3.6...@danbi-fi/danbi-net@0.3.7) (2022-02-27)
+
+**Note:** Version bump only for package @danbi-fi/danbi-net
+
+
+
+
+
 ## [0.3.6](https://github.com/danbi-fi/packages/compare/@danbi-fi/danbi-net@0.3.5...@danbi-fi/danbi-net@0.3.6) (2022-02-27)
 
 **Note:** Version bump only for package @danbi-fi/danbi-net
