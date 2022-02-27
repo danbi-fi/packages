@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/danbi-fi/packages/compare/coord-test@0.1.1...coord-test@0.1.2) (2022-02-27)
+
+**Note:** Version bump only for package coord-test
+
+
+
+
+
 ## [0.1.1](https://github.com/danbi-fi/packages/compare/coord-test@0.1.0...coord-test@0.1.1) (2022-02-27)
 
 **Note:** Version bump only for package coord-test
