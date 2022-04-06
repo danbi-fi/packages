@@ -12,6 +12,7 @@
     "tsc": "lerna run tsc --stream",
     "watch": "lerna run watch --stream",
     "test": "jest --coverage",
+    "test:cli": "lerna run test:cli --stream",
     "test:watch": "jest --coverage --watch",
     "test:prod": "npm run lint && npm run test -- --no-cache",
     "lint": "eslint 'packages/**/**/*.ts'",
