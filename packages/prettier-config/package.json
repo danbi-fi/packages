@@ -1,0 +1,35 @@
+{
+  "name": "@danbi-fi/prettier-config",
+  "version": "0.0.5",
+  "description": "danbi developers prettier configuration",
+  "keywords": [
+    "prettier",
+    "config",
+    "danbi-fi",
+    "danbi"
+  ],
+  "author": "Danbi-Fi <help@danbicorp.com>",
+  "homepage": "https://github.com/danbi-fi/packages/tree/main/packages/prettier-config#readme",
+  "license": "MIT",
+  "main": "prettier-config.json",
+  "files": [
+    "prettier-config.json"
+  ],
+  "prettier": {
+    "semi": true,
+    "singleQuote": false
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbi-fi/packages.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/danbi-fi/packages/issues"
+  }
+}
