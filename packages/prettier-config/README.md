@@ -14,7 +14,7 @@ In your `package.json`
 
 ```json
 {
-  "prettier": "@danbi-fis/prettier-config"
+  "prettier": "@danbi-fi/prettier-config"
 }
 ```
 
