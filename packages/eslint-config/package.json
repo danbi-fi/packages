@@ -30,7 +30,7 @@
     "url": "https://github.com/danbi-fi/packages/issues"
   },
   "devDependencies": {
-    "@types/node": "18.11.15"
+    "@types/node": "18.11.16"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.1",
