@@ -32,7 +32,7 @@
     "url": "https://github.com/danbi-fi/packages/issues"
   },
   "dependencies": {
-    "axios": "^0.27.0",
+    "axios": "^1.0.0",
     "dotenv": "^16.0.0",
     "lodash": "^4.17.21"
   },
